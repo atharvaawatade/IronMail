@@ -1,5 +1,5 @@
 # IRON Mail Chrome Extension
-Loom :[ https://github.com/atharvaawatade/IronMail](https://www.loom.com/share/fc91bd685ad64e9786c1c3987c6d76dc?sid=c337ad55-bbf9-4bb3-8f85-bfad928b6f62)
+Loom : https://www.loom.com/share/fc91bd685ad64e9786c1c3987c6d76dc?sid=c337ad55-bbf9-4bb3-8f85-bfad928b6f62
 
 
 ![image](https://github.com/user-attachments/assets/16c5f88e-9135-44ed-9ce6-816f690fbb1f)
