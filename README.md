@@ -1,7 +1,7 @@
 # 🛡️ IRON Mail Chrome Extension
 > Developed by Team Aarambh | Case Study: Generative AI in Context of Cybersecurity
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)  
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)  
 [![FastAPI](https://img.shields.io/badge/FastAPI-Framework-green.svg)](https://fastapi.tiangolo.com/)  
 [![Chrome](https://img.shields.io/badge/Chrome%20Extension-Web-blue.svg)](https://developer.chrome.com/docs/extensions/)  
 [![Google Gemini](https://img.shields.io/badge/Google-Gemini-orange.svg)](https://blog.google/technology/ai/google-gemini-ai/)  
