@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const denyPermissionBtn = document.getElementById('deny-permission');
     const analysisResult = document.getElementById('analysis-result');
 
-    // Initialize WebSocket connection
     const initWebSocket = () => {
         chatSocket = new WebSocket('ws://localhost:8000/chat');
 
@@ -26,14 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         chatSocket.onmessage = (event) => {
             try {
-                const data = JSON.parse(event.data); // Attempt to parse as JSON
+                const data = JSON.parse(event.data); 
                 if (data.message) {
                     appendMessage('ai', data.message);
                 } else {
-                    appendMessage('ai', JSON.stringify(data)); // Fallback to displaying raw JSON
+                    appendMessage('ai', JSON.stringify(data)); 
                 }
             } catch (error) {
-                // Handle non-JSON plain text messages
                 appendMessage('ai', event.data);
             }
         };
@@ -44,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
         chatSocket.onclose = () => updateStatus('Chat disconnected', 'warning');
     };
 
-    // Show status messages
     const updateStatus = (message, type = 'info') => {
         const icons = {
             success: '✅',
@@ -57,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
         statusDiv.style.backgroundColor = type === 'error' ? '#ffe6e6' : '#f8f9fa';
     };
 
-    // Add message to chat
     const appendMessage = (type, content) => {
         const messageDiv = document.createElement('div');
         messageDiv.classList.add('message', `${type}-message`);
@@ -75,7 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
         chatMessages.scrollTop = chatMessages.scrollHeight;
     };
 
-    // Handle screenshot permissions and capture
     const handleScreenshot = async () => {
         try {
             screenshotBtn.disabled = true;
@@ -128,7 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Handle image upload
     const handleImageUpload = () => imageUpload.click();
 
     const processUploadedImage = (file) => {
@@ -143,7 +137,6 @@ document.addEventListener('DOMContentLoaded', () => {
         reader.readAsDataURL(file);
     };
 
-    // Send chat message
     const sendMessage = () => {
         const message = chatInput.value.trim();
         if (!message && !currentImageData) return;
@@ -162,7 +155,6 @@ document.addEventListener('DOMContentLoaded', () => {
         currentImageData = null;
     };
 
-    // Event listeners
     screenshotBtn.addEventListener('click', handleScreenshot);
     chatBtn.addEventListener('click', () => {
         chatContainer.style.display = chatContainer.style.display === 'none' ? 'flex' : 'none';
@@ -179,6 +171,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Initialize WebSocket
     initWebSocket();
 });
