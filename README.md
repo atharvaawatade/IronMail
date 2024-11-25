@@ -1,14 +1,12 @@
 # IRON Mail Chrome Extension
 Loom : https://www.loom.com/share/fc91bd685ad64e9786c1c3987c6d76dc?sid=c337ad55-bbf9-4bb3-8f85-bfad928b6f62
 
+![User installs Iron Security Extension](https://github.com/user-attachments/assets/3cef9f51-e35c-424b-b76e-712846b1ac07)
 
 ![image](https://github.com/user-attachments/assets/16c5f88e-9135-44ed-9ce6-816f690fbb1f)
-![User installs Iron Security Extension](https://github.com/user-attachments/assets/3cef9f51-e35c-424b-b76e-712846b1ac07)
 ![Screenshot (765)](https://github.com/user-attachments/assets/1f2b0334-0e82-4d7c-812f-a8421195ae14)
 ![Screenshot (766)](https://github.com/user-attachments/assets/cab20b25-fc79-4915-861f-83b870806f48)
 ![Screenshot (769)](https://github.com/user-attachments/assets/f2c1a5ce-6962-4b1f-aedb-8416b9108e97)
-
-
 
 
 
@@ -46,24 +44,9 @@ The goal of the **IRON SECURITY Chrome Extension** is to provide **real-time pro
 ---
 
 ## ✨ Features
+![User installs Iron Security Extension (1)](https://github.com/user-attachments/assets/930888ea-4b3b-4450-ab35-e2836a82fe1d)
 
-### ⚡ **AI-Powered Threat Detection**  
-Uses advanced AI to detect phishing, malware, and suspicious activities across emails and websites.
 
-### 🕒 **Real-Time Web and Email Protection**  
-Detects threats in real-time, ensuring continuous protection while browsing or using email.
-
-### 🤝 **Seamless User Experience**  
-Operates silently in the background with minimal user interaction required.
-
-### 🛡️ **Multi-Layered Security Approach**  
-Combines AI, machine learning, and traditional security tools to defend against various cyber threats.
-
-### 🔒 **Zero-Trust Architecture**  
-Every interaction, email, and website request is verified for security, ensuring no untrusted content is accessed.
-
-### 🏢 **Enterprise-Grade Protection**  
-Provides robust protection for businesses of all sizes, ensuring sensitive data is always safeguarded.
 
 ---
 
