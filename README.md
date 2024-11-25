@@ -51,7 +51,46 @@ The goal of the **IRON SECURITY Chrome Extension** is to provide **real-time pro
 ![User installs Iron Security Extension (1)](https://github.com/user-attachments/assets/930888ea-4b3b-4450-ab35-e2836a82fe1d)
 
 
+### 🌐 **Frontend**
+- 🖥️ **Chrome Extension APIs**: Enables seamless interaction with the browser ecosystem.  
+- 🎨 **HTML, CSS, JavaScript**: Builds a responsive and user-friendly interface.
 
+### 🧠 **Backend & AI**
+- ⚡ **Python FastAPI**: Ensures fast, scalable, and efficient backend services.
+- 🖼️ **Pillow**: Provides image processing capabilities for rich visual experiences.
+- 🌌 **Gemini API**: Integrates advanced AI functionalities to enhance usability.
+- 🔗 **WebSocket**: Enables real-time communication for dynamic interactions.
+
+### 🔒 **Security**
+- 🛡️ **Military-grade Encryption**: Guarantees data confidentiality and secure communications.
+- 🚫 **Zero-Knowledge Architecture**: Ensures user privacy with no access to stored data.
+
+---
+
+## 🛠️ **Tech Stack**
+
+### **Frontend**
+- Chrome Extension APIs  
+- HTML, CSS, JavaScript
+
+### **Backend**
+- Python FastAPI  
+- Pillow  
+- Gemini API  
+- WebSocket  
+
+### **Security**
+- Military-grade encryption  
+- Zero-knowledge architecture  
+
+---
+
+## 🚀 **Getting Started**
+
+### **Prerequisites**
+- 🖥️ A working installation of **Google Chrome**.
+- 🐍 **Python 3.9+** installed on your system.
+- 💻 Familiarity with setting up a Chrome Extension.
 ---
 
 🚀 Stay secure with **IRON Mail** – the ultimate protection for your enterprise! 💻🔐
