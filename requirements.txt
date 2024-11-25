@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+google-generativeai
+Pillow
+aiofiles
+websockets
+python-multipart
