@@ -9,14 +9,11 @@ import json
 import asyncio
 import logging
 
-# Set up logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Initialize FastAPI app
 app = FastAPI()
 
-# Configure CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -25,11 +22,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Configure Gemini API
 GEMINI_API_KEY = " "  # Replace with your actual API key
 genai.configure(api_key=GEMINI_API_KEY)
 
-# Initialize model with enhanced configuration
 generation_config = {
     "temperature": 0.9,
     "top_p": 0.95,
@@ -42,7 +37,6 @@ model = genai.GenerativeModel(
     generation_config=generation_config,
 )
 
-# Security analysis prompts
 SECURITY_ANALYSIS_PROMPT = """
 You are a cybersecurity expert analyzing this screenshot. Focus on identifying potential security threats and risks:
 
@@ -125,13 +119,11 @@ async def analyze_screenshot(data: ScreenshotData):
         logger.info("Received screenshot analysis request")
         image_bytes = process_base64_image(data.image)
         
-        # Create prompt parts
         prompt_parts = [
             SECURITY_ANALYSIS_PROMPT,
             {"mime_type": "image/png", "data": image_bytes}
         ]
         
-        # Get analysis from Gemini
         try:
             response = model.generate_content(prompt_parts)
             analysis = response.text.strip()
@@ -139,12 +131,10 @@ async def analyze_screenshot(data: ScreenshotData):
             logger.error(f"Gemini API error: {str(e)}")
             raise HTTPException(status_code=500, detail="Analysis service error")
 
-        # Parse response
         lines = analysis.split('\n')
         verdict = lines[0].strip()
         explanation = [line.strip() for line in lines[1:4] if line.strip()]
 
-        # Ensure we have exactly three explanation points
         while len(explanation) < 3:
             explanation.append("No additional concerns identified.")
 
@@ -172,7 +162,6 @@ async def websocket_endpoint(websocket: WebSocket):
             response_text = ""
             prompt_parts = []
             
-            # Handle image analysis if present
             if chat_input.get('image'):
                 try:
                     image_bytes = process_base64_image(chat_input['image'])
