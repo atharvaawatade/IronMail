@@ -75,23 +75,23 @@ The goal of the **IRON SECURITY Chrome Extension** is to provide **real-time pro
 </td>
 <td align="center">
   <a href="https://github.com/pawarspeaks">
-    <img src="![image](https://github.com/user-attachments/assets/b497c3e6-b974-45de-9691-28bd8e82cd6e)" width="100px;" alt="Contributor 2"/>
+    <img src="https://github.com/user-attachments/assets/b497c3e6-b974-45de-9691-28bd8e82cd6e" width="100px;" alt="Contributor 2"/>
     <br />
-    <sub><b>ML Engineer</b></sub>
+    <sub><b>Backend Developer</b></sub>
   </a>
 </td>
 <td align="center">
   <a href="https://github.com/devashish8282">
     <img src="https://github.com/user-attachments/assets/459ce536-140d-49e6-ba7a-5f3178b4e085" width="100px;" alt="Contributor 3"/>
     <br />
-    <sub><b>ADAS Specialist</b></sub>
+    <sub><b>Gen AI Specialist</b></sub>
   </a>
       </td>
 <td align="center">
   <a href="https://github.com/shahilsh">
-    <img src="![image](https://github.com/user-attachments/assets/cad60384-09b0-4f53-83f9-7de918073de7)" width="100px;" alt="Contributor 2"/>
+    <img src="https://github.com/user-attachments/assets/cad60384-09b0-4f53-83f9-7de918073de7" width="100px;" alt="Contributor 2"/>
     <br />
-    <sub><b>ML Engineer</b></sub>
+    <sub><b>FrontEnd Developer</b></sub>
   </a>
 </td>
     </tr>
