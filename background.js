@@ -4,13 +4,11 @@ let ports = new Set();
 chrome.runtime.onInstalled.addListener(() => {
     console.log("IRON SECURITY Extension Installed");
     
-    // Request necessary permissions early
     chrome.permissions.request({
         permissions: ['tabs', 'activeTab', 'desktopCapture']
     });
 });
 
-// Handle screenshot capture
 async function captureScreen(streamId) {
     try {
         const stream = await navigator.mediaDevices.getUserMedia({
@@ -48,7 +46,6 @@ async function captureScreen(streamId) {
     }
 }
 
-// Handle messages from popup
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.action === "requestScreenshot") {
         chrome.desktopCapture.chooseDesktopMedia(
@@ -68,7 +65,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
                 }
             }
         );
-        return true; // Required for async response
+        return true; 
     }
     
     if (message.action === "requestPermissions") {
@@ -86,7 +83,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     }
 });
 
-// Long-lived connection handling
 chrome.runtime.onConnect.addListener((port) => {
     ports.add(port);
     
@@ -95,7 +91,6 @@ chrome.runtime.onConnect.addListener((port) => {
     });
 });
 
-// Keep service worker active
 const keepAlive = () => {
     for (const port of ports) {
         port.postMessage({ type: "ping" });
