@@ -6,7 +6,7 @@ Loom : https://www.loom.com/share/fc91bd685ad64e9786c1c3987c6d76dc?sid=c337ad55-
 ![Screenshot (765)](https://github.com/user-attachments/assets/1f2b0334-0e82-4d7c-812f-a8421195ae14)
 ![Screenshot (766)](https://github.com/user-attachments/assets/cab20b25-fc79-4915-861f-83b870806f48)
 ![Screenshot (769)](https://github.com/user-attachments/assets/f2c1a5ce-6962-4b1f-aedb-8416b9108e97)
-![IRON MAIL](https://github.com/user-attachments/assets/79cb6b65-8ffe-4bf6-a510-3fda8953c4cc)
+
 
 ![User installs Iron Security Extension](https://github.com/user-attachments/assets/3cef9f51-e35c-424b-b76e-712846b1ac07)
 
