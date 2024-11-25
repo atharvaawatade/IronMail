@@ -4,11 +4,11 @@ class EmailScanner {
         this.initialized = false;
         this.EMAIL_SELECTORS = {
             gmail: [
-                'div[role="dialog"] .a3s.aiL',         // Email body in popup
-                'div[role="main"] .a3s.aiL',           // Email body in main view
-                '.h7.ie.lr > .Ar.Au > div',            // Expanded email thread
-                '.gs .ii.gt',                          // Alternative email structure
-                'div[data-message-id] .a3s.aiL'        // Message-specific content
+                'div[role="dialog"] .a3s.aiL',        
+                'div[role="main"] .a3s.aiL',           
+                '.h7.ie.lr > .Ar.Au > div',          
+                '.gs .ii.gt',                          
+                'div[data-message-id] .a3s.aiL'     
             ],
             outlook: [
                 '#Item\\.MessageNormalizedBody',
@@ -23,7 +23,6 @@ class EmailScanner {
     async initialize() {
         if (this.initialized) return;
         
-        // Inject required styles for highlighting
         const style = document.createElement('style');
         style.textContent = `
             .iron-mail-highlight {
@@ -35,7 +34,6 @@ class EmailScanner {
         `;
         document.head.appendChild(style);
         
-        // Set up message listeners
         chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
             if (message.action === "triggerScan") {
                 this.performScan().then(sendResponse);
@@ -71,7 +69,6 @@ class EmailScanner {
                 metadata.sender = document.querySelector('.gD')?.getAttribute('email') || '';
                 metadata.date = document.querySelector('.g3')?.textContent || '';
                 
-                // Get attachments
                 const attachments = document.querySelectorAll('.aZo');
                 metadata.attachments = Array.from(attachments).map(att => ({
                     name: att.getAttribute('data-tooltip') || 'Unknown attachment',
@@ -104,7 +101,6 @@ class EmailScanner {
                 const text = element.innerText.trim();
                 if (text && text.length > 50) {
                     content = text;
-                    // Highlight the found content temporarily
                     element.classList.add('iron-mail-highlight');
                     setTimeout(() => element.classList.remove('iron-mail-highlight'), 2000);
                     break;
@@ -128,7 +124,6 @@ class EmailScanner {
             urgent_language: false
         };
 
-        // Check for suspicious URLs
         const urlRegex = /(https?:\/\/[^\s]+)/g;
         const urls = content.match(urlRegex) || [];
         threats.suspicious_links = urls.filter(url => {
@@ -137,7 +132,6 @@ class EmailScanner {
                    url.includes('goo.gl');
         });
 
-        // Check for phishing indicators
         const phishingKeywords = [
             'verify your account',
             'update your information',
@@ -149,7 +143,6 @@ class EmailScanner {
             content.toLowerCase().includes(keyword.toLowerCase())
         );
 
-        // Check for urgent language
         const urgentKeywords = [
             'urgent',
             'immediate action',
@@ -166,33 +159,27 @@ class EmailScanner {
 
     async performScan() {
         try {
-            // Update status: Starting scan
             chrome.runtime.sendMessage({
                 action: "updateStatus",
                 status: "Starting email analysis..."
             });
 
-            // Extract content and metadata
             const content = await this.extractEmailContent();
             const metadata = await this.extractEmailMetadata();
             
-            // Update status: Content extracted
             chrome.runtime.sendMessage({
                 action: "updateStatus",
                 status: "Processing email content..."
             });
 
-            // Analyze for potential threats
             const threats = await this.analyzePotentialThreats(content);
 
-            // Prepare the payload for the AI analysis
             const analysisPayload = {
                 content: content,
                 metadata: metadata,
                 preliminary_analysis: threats
             };
 
-            // Send to server for AI analysis
             const response = await fetch("http://localhost:8000/scan", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -205,14 +192,12 @@ class EmailScanner {
 
             const result = await response.json();
 
-            // Combine local analysis with AI analysis
             const finalAnalysis = {
                 ...result,
                 local_threats: threats,
                 metadata: metadata
             };
 
-            // Send complete results
             chrome.runtime.sendMessage({
                 action: "scanComplete",
                 threatLevel: result.threatLevel,
@@ -234,5 +219,4 @@ class EmailScanner {
     }
 }
 
-// Initialize the scanner
 const scanner = new EmailScanner();
