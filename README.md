@@ -7,7 +7,6 @@
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4-green.svg)](https://openai.com/)  
 [![Google Gemini](https://img.shields.io/badge/Google-Gemini-orange.svg)](https://blog.google/technology/ai/google-gemini-ai/)  
 [![PyTorch](https://img.shields.io/badge/PyTorch-Framework-red.svg)](https://pytorch.org/)  
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-Framework-orange.svg)](https://www.tensorflow.org/)  
 
 
 Loom: https://www.loom.com/share/fc91bd685ad64e9786c1c3987c6d76dc?sid=c337ad55-bbf9-4bb3-8f85-bfad928b6f62
