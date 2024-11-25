@@ -98,19 +98,8 @@ IRON MAIL is a Chrome extension that combines email and web security with advanc
 
 ## 🛠️ **Tech Stack**
 
-### **Frontend**
-- Chrome Extension APIs  
-- HTML, CSS, JavaScript
+![User installs Iron Security Extension (2)](https://github.com/user-attachments/assets/f3d75eae-c8dc-4b19-9bce-ab9a413f5336)
 
-### **Backend**
-- Python FastAPI  
-- Pillow  
-- Gemini API  
-- WebSocket  
-
-### **Security**
-- Military-grade encryption  
-- Zero-knowledge architecture  
 
 ## 🚀 **Getting Started**
 
