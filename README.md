@@ -3,8 +3,8 @@ Loom : https://www.loom.com/share/fc91bd685ad64e9786c1c3987c6d76dc?sid=c337ad55-
 
 ![User installs Iron Security Extension](https://github.com/user-attachments/assets/3cef9f51-e35c-424b-b76e-712846b1ac07)
 
-![image](https://github.com/user-attachments/assets/16c5f88e-9135-44ed-9ce6-816f690fbb1f)
-![Screenshot (765)](https://github.com/user-attachments/assets/1f2b0334-0e82-4d7c-812f-a8421195ae14)
+![Screenshot (764)](https://github.com/user-attachments/assets/9f6595b9-2c82-49cd-8ec3-091a6cce441c)
+![Screenshot 2024-11-24 233001](https://github.com/user-attachments/assets/f1e3fe7b-4a6d-4e96-be40-0e7e90635473)
 ![Screenshot (766)](https://github.com/user-attachments/assets/cab20b25-fc79-4915-861f-83b870806f48)
 ![Screenshot (769)](https://github.com/user-attachments/assets/f2c1a5ce-6962-4b1f-aedb-8416b9108e97)
 
