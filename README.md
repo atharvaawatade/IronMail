@@ -1,8 +1,8 @@
 # 🛡️ IRON Mail Chrome Extension
-> Developed by Team Aarambh | Case Study: Generative AI in context of cybersecurity
+> Developed by Team Aarambh | Case Study: Generative AI in Context of Cybersecurity
 
 Loom: https://www.loom.com/share/fc91bd685ad64e9786c1c3987c6d76dc?sid=c337ad55-bbf9-4bb3-8f85-bfad928b6f62
----
+
 ## flowchart
 ![User installs Iron Security Extension](https://github.com/user-attachments/assets/3cef9f51-e35c-424b-b76e-712846b1ac07)
 ---
@@ -65,7 +65,6 @@ The goal of the **IRON SECURITY Chrome Extension** is to provide **real-time pro
 - 🛡️ **Military-grade Encryption**: Guarantees data confidentiality and secure communications.
 - 🚫 **Zero-Knowledge Architecture**: Ensures user privacy with no access to stored data.
 
----
 
 ## 🛠️ **Tech Stack**
 
@@ -83,7 +82,7 @@ The goal of the **IRON SECURITY Chrome Extension** is to provide **real-time pro
 - Military-grade encryption  
 - Zero-knowledge architecture  
 
----
+
 
 ## 🚀 **Getting Started**
 
@@ -91,7 +90,7 @@ The goal of the **IRON SECURITY Chrome Extension** is to provide **real-time pro
 - 🖥️ A working installation of **Google Chrome**.
 - 🐍 **Python 3.9+** installed on your system.
 - 💻 Familiarity with setting up a Chrome Extension.
----
+
 
 🚀 Stay secure with **IRON Mail** – the ultimate protection for your enterprise! 💻🔐
 
