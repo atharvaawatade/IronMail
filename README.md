@@ -1,15 +1,17 @@
-# IRON Mail Chrome Extension
-Loom : https://www.loom.com/share/fc91bd685ad64e9786c1c3987c6d76dc?sid=c337ad55-bbf9-4bb3-8f85-bfad928b6f62
-
+# 🛡️ IRON Mail Chrome Extension
+Loom: https://www.loom.com/share/fc91bd685ad64e9786c1c3987c6d76dc?sid=c337ad55-bbf9-4bb3-8f85-bfad928b6f62
+---
+## flowchart
 ![User installs Iron Security Extension](https://github.com/user-attachments/assets/3cef9f51-e35c-424b-b76e-712846b1ac07)
-
+---
+## 📖 Prototype
 ![Screenshot (764)](https://github.com/user-attachments/assets/9f6595b9-2c82-49cd-8ec3-091a6cce441c)
 ![Screenshot 2024-11-24 233001](https://github.com/user-attachments/assets/f1e3fe7b-4a6d-4e96-be40-0e7e90635473)
 ![Screenshot (766)](https://github.com/user-attachments/assets/cab20b25-fc79-4915-861f-83b870806f48)
 ![Screenshot (769)](https://github.com/user-attachments/assets/f2c1a5ce-6962-4b1f-aedb-8416b9108e97)
 
 
-
+---
 # 🛡️ IRON Mail: Advanced Chrome Extension for Enterprise Security
 
 IRON Mail is an advanced Chrome extension designed to enhance **enterprise-level email and web security**. Powered by cutting-edge AI and real-time threat detection, **IRON SECURITY** protects businesses from phishing attacks, malware, and other advanced cyber threats. It integrates with both email and web browsing activities to ensure a secure environment for users.
