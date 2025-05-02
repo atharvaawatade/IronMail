@@ -143,13 +143,7 @@ IRON MAIL is a Chrome extension that combines email and web security with advanc
     <sub><b>Gen AI Specialist</b></sub>
   </a>
       </td>
-<td align="center">
-  <a href="https://github.com/shahilsh">
-    <img src="https://github.com/user-attachments/assets/cad60384-09b0-4f53-83f9-7de918073de7" width="100px;" alt="Contributor 2"/>
-    <br />
-    <sub><b>FrontEnd Developer</b></sub>
-  </a>
-</td>
+
     </tr>
   </table>
 </div>
